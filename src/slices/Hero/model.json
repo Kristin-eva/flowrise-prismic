@@ -12,99 +12,48 @@
       "description": "Default",
       "imageUrl": "",
       "primary": {
-        "eyebrowHeadline": {
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading1"
+          }
+        },
+        "body": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Body",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph"
+          }
+        },
+        "button_text": {
           "type": "Text",
           "config": {
-            "label": "eyebrowHeadline",
-            "placeholder": "Eyebrow"
+            "label": "Button Text",
+            "placeholder": ""
           }
         },
-        "title": {
-          "type": "StructuredText",
+        "button_link": {
+          "type": "Link",
           "config": {
-            "label": "title",
+            "label": "Button Link",
             "placeholder": "",
+            "select": null,
             "allowTargetBlank": true,
-            "single": "heading1,heading2,heading3,heading4,heading5,heading6,strong,em"
-          }
-        },
-        "description": {
-          "type": "StructuredText",
-          "config": {
-            "label": "description",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "multi": "paragraph,preformatted,hyperlink,embed,rtl,strong,em,list-item,o-list-item"
+            "allowText": true,
+            "repeat": false
           }
         },
         "image": {
           "type": "Image",
           "config": {
-            "label": "image",
+            "label": "Image",
             "constraint": {},
             "thumbnails": []
-          }
-        },
-        "callToActionLink": {
-          "type": "Link",
-          "config": {
-            "label": "callToActionLink",
-            "placeholder": "",
-            "select": null,
-            "allowText": true
-          }
-        }
-      },
-      "items": {}
-    },
-    {
-      "id": "imageRight",
-      "name": "Image Right",
-      "docURL": "...",
-      "version": "initial",
-      "description": "Default",
-      "imageUrl": "",
-      "primary": {
-        "eyebrowHeadline": {
-          "type": "Text",
-          "config": {
-            "label": "eyebrowHeadline",
-            "placeholder": "Eyebrow"
-          }
-        },
-        "title": {
-          "type": "StructuredText",
-          "config": {
-            "label": "title",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "heading1,heading2,heading3,heading4,heading5,heading6,strong,em"
-          }
-        },
-        "description": {
-          "type": "StructuredText",
-          "config": {
-            "label": "description",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "multi": "paragraph,preformatted,hyperlink,embed,rtl,strong,em,list-item,o-list-item"
-          }
-        },
-        "image": {
-          "type": "Image",
-          "config": {
-            "label": "image",
-            "constraint": {},
-            "thumbnails": []
-          }
-        },
-        "callToActionLink": {
-          "type": "Link",
-          "config": {
-            "label": "callToActionLink",
-            "placeholder": "",
-            "select": null,
-            "allowText": true
           }
         }
       },
