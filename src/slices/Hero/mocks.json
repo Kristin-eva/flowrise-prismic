@@ -9,7 +9,7 @@
 					{
 						"type": "heading1",
 						"content": {
-							"text": "hæhæ",
+							"text": "Productivity that flows \nwith your life.",
 							"spans": []
 						},
 						"direction": "ltr"
@@ -22,47 +22,49 @@
 					{
 						"type": "paragraph",
 						"content": {
-							"text": "Do dolore sunt duis deserunt anim. Sit non nulla consectetur tempor incididunt nisi."
-						}
+							"text": "Unleash your potential by harmonizing your daily tasks and habits with your unique energy rhythms.",
+							"spans": []
+						},
+						"direction": "ltr"
 					}
 				]
 			},
 			"button_link": {
-				"__TYPE__": "LinkContent",
 				"key": "d2861e37-3ce0-4878-8785-adc5cf7994bf",
+				"__TYPE__": "LinkContent",
 				"value": {
 					"__TYPE__": "ExternalLink",
 					"url": "https://prismic.io",
 					"text": ""
 				}
 			},
-			"image": {
-				"origin": {
-					"id": "main",
-					"url": "https://images.unsplash.com/photo-1589321599763-d66926c29613",
-					"width": 3168,
-					"height": 4752
-				},
-				"url": "https://images.unsplash.com/photo-1589321599763-d66926c29613",
-				"width": 3168,
-				"height": 4752,
-				"edit": {
-					"zoom": 1,
-					"crop": {
-						"x": 0,
-						"y": 0
-					},
-					"background": "transparent"
-				},
-				"credits": null,
-				"alt": "image",
-				"__TYPE__": "ImageContent",
-				"thumbnails": {}
-			},
 			"button_text": {
 				"__TYPE__": "FieldContent",
 				"type": "Text",
 				"value": "Try for free"
+			},
+			"image": {
+				"__TYPE__": "ImageContent",
+				"provider": "imgix",
+				"url": "https://images.unsplash.com/photo-1546548970-71785318a17b?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3Mzg2MzE0MDh8MA&ixlib=rb-4.0.3&q=85",
+				"alt": "flat lay photography of sliced pomegranate, lime, and lemon",
+				"origin": {
+					"id": "7r1HxvVC7AY",
+					"url": "https://images.unsplash.com/photo-1546548970-71785318a17b?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3Mzg2MzE0MDh8MA&ixlib=rb-4.0.3&q=85",
+					"width": 3104,
+					"height": 4656
+				},
+				"width": 3104,
+				"height": 4656,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				"thumbnails": {}
 			}
 		},
 		"items": []
