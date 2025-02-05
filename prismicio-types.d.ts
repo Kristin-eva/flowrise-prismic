@@ -211,9 +211,83 @@ export type HeroSliceDefault = prismic.SharedSliceVariation<
 >;
 
 /**
+ * Primary content in *Hero → Horizontal → Primary*
+ */
+export interface HeroSliceHorationPrimary {
+  /**
+   * Heading field in *Hero → Horizontal → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.horation.primary.heading
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  heading: prismic.RichTextField;
+
+  /**
+   * Body field in *Hero → Horizontal → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.horation.primary.body
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  body: prismic.RichTextField;
+
+  /**
+   * Button Text field in *Hero → Horizontal → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.horation.primary.button_text
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  button_text: prismic.KeyTextField;
+
+  /**
+   * Button Link field in *Hero → Horizontal → Primary*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.horation.primary.button_link
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  button_link: prismic.LinkField<
+    string,
+    string,
+    unknown,
+    prismic.FieldState,
+    never
+  >;
+
+  /**
+   * Image field in *Hero → Horizontal → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.horation.primary.image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  image: prismic.ImageField<never>;
+}
+
+/**
+ * Horizontal variation for Hero Slice
+ *
+ * - **API ID**: `horation`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type HeroSliceHoration = prismic.SharedSliceVariation<
+  "horation",
+  Simplify<HeroSliceHorationPrimary>,
+  never
+>;
+
+/**
  * Slice variation for *Hero*
  */
-type HeroSliceVariation = HeroSliceDefault;
+type HeroSliceVariation = HeroSliceDefault | HeroSliceHoration;
 
 /**
  * Hero Shared Slice
@@ -253,8 +327,10 @@ declare module "@prismicio/client" {
       AllDocumentTypes,
       HeroSlice,
       HeroSliceDefaultPrimary,
+      HeroSliceHorationPrimary,
       HeroSliceVariation,
       HeroSliceDefault,
+      HeroSliceHoration,
     };
   }
 }

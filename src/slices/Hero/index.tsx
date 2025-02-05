@@ -12,11 +12,7 @@ import Heading from "@/components/Heading";
 
 const components: JSXMapSerializer = {
   heading1: ({ children }) => (
-    <Heading
-      as="h1"
-      size="xl"
-      className="md:mb-8 mb-4 mt-12 first:mt-0">
-        
+    <Heading as="h1" size="xl" className="md:mb-8 mb-4 mt-12 first:mt-0">
       {children}
     </Heading>
   ),
@@ -42,6 +38,9 @@ const Hero: FC<HeroProps> = ({ slice }) => {
       data-slice-variation={slice.variation}
     >
       <div className="grid grid-cols-1 place-items-center text-center">
+        {slice.variation === "horation" && (
+          <p>This is the Horizontal variation!</p>
+        )}
         <PrismicRichText
           field={slice.primary.heading}
           components={components}
