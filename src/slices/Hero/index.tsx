@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { Content } from "@prismicio/client";
-import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
+import { PrismicNextImage } from "@prismicio/next";
 import {
   JSXMapSerializer,
   PrismicRichText,
@@ -12,7 +12,11 @@ import Heading from "@/components/Heading";
 
 const components: JSXMapSerializer = {
   heading1: ({ children }) => (
-    <Heading as="h1" size="xl" className="md:mb-8 mb-4 mt-12 first:mt-0">
+    <Heading
+      as="h1"
+      size="xl"
+      className="font-body md:mb-8 mb-4 mt-12 first:mt-0"
+    >
       {children}
     </Heading>
   ),

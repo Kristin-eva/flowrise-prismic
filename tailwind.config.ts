@@ -10,10 +10,10 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        body: ["var(--font-nunito-sans"],
-        display: ["var(--font-nunito)"],
+        body: ["var(--font-nunito-sans)", "sans-serif"],
+        display: ["var(--font-nunito)", "sans-serif"],
       }
       },
     },
   plugins: [],
-};
+} satisfies Config;
